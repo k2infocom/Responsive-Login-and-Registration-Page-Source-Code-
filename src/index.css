@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  text-decoration: none;
+
+  font-family: 'poppins';
+}
+
+body{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(211, 235, 255);
+}
+
+.container{
+  width: 800px;
+  height: 500px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  border: 0.2px solid #fff;
+  display: flex;
+  gap: 60px;
+  overflow: hidden;
+}
+
+.form_wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px;
+  height: 100%;
+  width: 50%;
+}
+
+
+.form_wrapper a{
+  text-align: end;
+  font-size: 14px;
+  color: #1e1e1e;
+  margin-bottom: 10px;
+}
+
+.form_wrapper p{
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.form_wrapper h2{
+  font-size: 36px;
+  line-height: 20px;
+  margin-top: 50px;
+}
+
+
+.form_wrapper .Input_wrapper{
+  height: 40px;
+  width: 100%;
+  background-color: #fff;
+  border: 0.2px solid rgba(131, 131, 131, 0.3);
+}
+
+.form_wrapper .Input_wrapper input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 5px 8px;
+}
+
+button{
+  min-height: 45px;
+  width: 100%;
+  background-color: rgb(4, 68, 133);
+  font-size: 17px;
+  border: none;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.ImageWrapper{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: rgb(211, 235, 255);
+  border-radius: 12px;
+}
+
+.ImageWrapper img{
+  width: 100%;
+}
+
+@media screen and (max-width:900px) {
+  .ImageWrapper{
+    display: none;
+  }
+
+  .form_wrapper{
+    width: 100%;
+  }
+
+  .container{
+    width: 550px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .container{
+    width: 80%;
+    margin: auto;
+  }
+}
